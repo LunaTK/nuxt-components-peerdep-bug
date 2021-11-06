@@ -22,4 +22,14 @@ $ yarn build
 
 See the error
 
-![nuxt_error](./nuxt_error.png)
+![nuxt_error](./build_error.png)
+
+If you run `yarn build` with yarn v1, unmet peerDependency will be reported as a warning and build succeeds.
+
+```shell
+$ git reset --hard HEAD^ # this commit uses yarn v1
+$ yarn install
+$ yarn build # no error
+```
+
+![build_done](./build_done.png)

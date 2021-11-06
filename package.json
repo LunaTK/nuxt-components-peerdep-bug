@@ -11,5 +11,6 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "post-update": "yarn upgrade --latest"
-  }
+  },
+  "packageManager": "yarn@3.1.0"
 }
